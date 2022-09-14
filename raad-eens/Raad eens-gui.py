@@ -13,9 +13,8 @@ Rondes = 1
 KansenRonden = 0
 
 def GetalGeneren():
-    
-
     RandomGetal = random.randint(0,1000)
+    # print (RandomGetal)
     return RandomGetal
 
 Getal = GetalGeneren()
@@ -36,7 +35,6 @@ def GetalControleren(IngevuldeGetal, randomGetal):
     global KansenRonden
     global Rondes
     Getal = IngevuldeGetal.get()
-    print (randomGetal)
     KansenRonden += 1
     if KansenRonden <= 10 and Rondes <= 20:
         if int(Getal) > randomGetal:
